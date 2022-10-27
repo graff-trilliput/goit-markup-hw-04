@@ -71,6 +71,7 @@ body {
 .link:hover,
 .link:focus {
   color: var(--blue);
+  fill: var(--blue);
 }
 
 .link {
@@ -156,10 +157,6 @@ body {
   margin-right: 10px;
 }
 
-.header-contact-icon:hover .header-contact-icon:focus {
-  fill: var(--blue);
-}
-
 .header-contact-item {
   display: flex;
   justify-content: center;
@@ -169,28 +166,23 @@ body {
   margin-right: 50px;
 }
 
-/* .header-contact-link::before {
-  display: inline-block;
-  margin-right: 10px;
-
-  content: '';
-  width: 10px;
-  height: 1px;
-  background-color: var(--text-color-gray);
-} */
-
 .header-contact-link {
+  display: flex;
+  align-items: center;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   color: var(--text-color-gray);
+  fill: var(--text-color-gray);
 }
 
 /* hero section */
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
-
+  margin: 0 auto;
+  width: 1600px;
   text-align: center;
 
   background-color: var(--dark-bg);
@@ -410,13 +402,22 @@ body {
 
   border: 1px solid var(--icon-color);
   border-radius: 4px;
+  fill: var(--icon-color);
 }
+
+.loyal-clients-item:hover,
+.loyal-clients-item:focus {
+  border: 1px solid var(--blue);
+  fill: var(--blue);
+}
+
 .loyal-clients-box {
   margin-top: 16px;
   margin-bottom: 16px;
   margin-left: 32px;
   margin-right: 32px;
 }
+
 /* footer section */
 .footer {
   padding-top: 60px;
@@ -426,6 +427,7 @@ body {
 }
 .footer-blocks {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-blocks-social {
