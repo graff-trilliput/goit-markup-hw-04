@@ -408,15 +408,29 @@ body {
 .loyal-clients-item:hover,
 .loyal-clients-item:focus {
   border: 1px solid var(--blue);
+}
+
+.loyal-clients-item:hover .clients-icon,
+.loyal-clients-item:focus .clients-icon {
   fill: var(--blue);
 }
 
-.loyal-clients-box {
+.loyal-clients-link {
   margin-top: 16px;
   margin-bottom: 16px;
   margin-left: 32px;
   margin-right: 32px;
 }
+
+.clients-icon {
+  border: none;
+  fill: var(--icon-color);
+}
+
+/* .clients-icon:hover,
+.clients-icon:focus {
+  fill: var(--blue);
+} */
 
 /* footer section */
 .footer {
