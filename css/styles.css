@@ -186,7 +186,8 @@ body {
   text-align: center;
 
   background-color: var(--dark-bg);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero/hero.jpg);
   background-size: cover;
 }
 
@@ -317,7 +318,8 @@ body {
   margin-left: 30px;
 
   background-color: var(--color-white);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -393,46 +395,35 @@ body {
   line-height: 1.17;
 }
 
-.loyal-clients-item:not(:first-child) {
-  margin-left: 30px;
-}
-
 .loyal-clients-item {
   display: flex;
 
-  border: 1px solid var(--icon-color);
-  border-radius: 4px;
-  fill: var(--icon-color);
-}
-
-.loyal-clients-item:hover,
-.loyal-clients-item:focus {
-  border: 1px solid var(--blue);
-}
-
-.loyal-clients-item:hover .clients-icon,
-.loyal-clients-item:focus .clients-icon {
-  fill: var(--blue);
+  flex-basis: calc((100% - 180px) / 6);
+  margin-left: 30px;
 }
 
 .loyal-clients-link {
-  margin-top: 16px;
-  margin-bottom: 16px;
-  margin-left: 32px;
-  margin-right: 32px;
+  display: flex;
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+  fill: var(--icon-color);
+
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.loyal-clients-link:hover,
+.loyal-clients-link:focus {
+  border: 1px solid var(--blue);
+  fill: var(--blue);
 }
 
 .clients-icon {
-  border: none;
-  fill: var(--icon-color);
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
-/* .clients-icon:hover,
-.clients-icon:focus {
-  fill: var(--blue);
-} */
-
-/* footer section */
+/* =================== footer section ================================= */
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -517,7 +508,8 @@ body {
 .filter-btn:focus {
   color: var(--color-white);
   background-color: var(--blue);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .filter-btn {
@@ -557,7 +549,8 @@ body {
 
 .project-item:hover,
 .project-item:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .project-item-context-wrapper {
