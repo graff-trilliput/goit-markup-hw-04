@@ -83,6 +83,17 @@ body {
 }
 /* -------------------------------------------- */
 
+.current::after {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 100%;
+  border-bottom: 2px solid var(--blue);
+  border-radius: 2px;
+  left: 0;
+  bottom: -31px;
+}
+
 .container {
   width: 1200px;
   margin-left: auto;
@@ -136,6 +147,10 @@ body {
 .header-nav-list {
   display: flex;
   align-items: center;
+}
+
+.header-nav-item {
+  position: relative;
 }
 
 .header-nav-item:not(:last-child) {
